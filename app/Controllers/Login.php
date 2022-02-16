@@ -9,8 +9,9 @@ class Login extends Controller
 {
     public function index()
     {
+        $data = [];
         helper(['form']);
-        echo view('login');
+        echo view('Admin/login', $data);
     }
 
     public function auth()
