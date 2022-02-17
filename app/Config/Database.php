@@ -32,11 +32,11 @@ class Database extends Config
      */
     public $default = [
         'DSN'      => '',
-        'hostname' => 'sqlite:taxi_db.db',
+        'hostname' => 'localhost',
         'username' => '',
         'password' => '',
-        'database' => '',
-        'DBDriver' => 'pdo',
+        'database' => 'taxi_db.db3',
+        'DBDriver' => 'SQLite3',
         'DBPrefix' => '',
         'pConnect' => false,
         'DBDebug'  => (ENVIRONMENT !== 'production'),

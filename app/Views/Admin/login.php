@@ -45,56 +45,51 @@
 
       <hr>
       <!-- <p>Don't have an account!</p>  -->
+      <a href="/register">
       <button class="btn btn-primary btn-block" type="button" id="btn-signup"><i class="fas fa-user-plus"></i> Sign up New Account</button>
+      </a>
     </form>
-
-    <form action="/reset/password/" class="form-reset">
-      <input type="email" id="resetEmail" class="form-control" placeholder="Email address" required="" autofocus="">
-      <button class="btn btn-primary btn-block" type="submit">Reset Password</button>
-      <a href="#" id="cancel_reset"><i class="fas fa-angle-left"></i> Back</a>
-    </form>
-
-    <form action="/signup/" class="form-signup">
+    <div class="container mt-4" id="alertId">
+            <div class="row">
+                <div class="col-md-12">
+                    <?php 
+                        $session = session();
+                        if(!empty($session->getFlashdata('success'))){
+                            ?>
+                            <div class="alert alert-success">
+                                <?php echo $session->getFlashdata('success'); ?>
+                            </div>
+                        <?php
+                        }
+                    
+                    ?>
+                </div>
+            </div>
+    </div>
+    <!-- <form action="/register" class="form-signup" method="POST">
 
       <input type="text" id="uname1" name="uname1" class="form-control" placeholder="First Name" required="" autofocus="" value="<?php set_value("uname1") ?>">
       <input type="text" id="uname2" name="uname2" class="form-control" placeholder="Last Name" required="" autofocus="" value="<?php set_value("uname2") ?>">
       <input type="email" id="uemail" name="uemail" class="form-control" placeholder="Email address" required autofocus="" value="<?php set_value("uadd") ?>">
-      <input type="email" id="uuname" name="uuname" class="form-control" placeholder="User Name" required autofocus="" value="<?php set_value("uuname") ?>">
+      <input type="text" id="uuname" name="uuname" class="form-control" placeholder="User Name" required autofocus="" value="<?php set_value("uuname") ?>">
       <input type="text" id="uadd" name="uadd" class="form-control" placeholder="Address" required autofocus="" value="<?php set_value("uadd") ?>">
       <input type="number" id="ucontact" name="ucontact" class="form-control" placeholder="Contact no." required autofocus="" value="<?php set_value("ucontact") ?>">
-      <input type="password" id="user-pass" class="form-control" placeholder="Password" required autofocus="">
+      <input type="password" id="upass" name="upass" class="form-control" placeholder="Password" required autofocus="" value="<?php set_value("upass") ?>">
+      <input type="password" id="upass2" name="upass2" class="form-control" placeholder="Confirm Password" required autofocus="" value="<?php set_value("upass2") ?>">      
       
-
+     
       <button class="btn btn-primary btn-block" type="submit"><i class="fas fa-user-plus"></i> Sign Up</button>
       <a href="#" id="cancel_signup"><i class="fas fa-angle-left"></i> Back</a>
     </form>
-    <br>
+    <br> -->
 
   </div>
   <p style="text-align:center">
-    <a href="http://bit.ly/2RjWFMfunction toggleResetPswd(e){
-    e.preventDefault();
-    $('#logreg-forms .form-signin').toggle() // display:block or none
-    $('#logreg-forms .form-reset').toggle() // display:block or none
-}
-
-function toggleSignUp(e){
-    e.preventDefault();
-    $('#logreg-forms .form-signin').toggle(); // display:block or none
-    $('#logreg-forms .form-signup').toggle(); // display:block or none
-}
-
-$(()=>{
-    // Login Register Form
-    $('#logreg-forms #forgot_pswd').click(toggleResetPswd);
-    $('#logreg-forms #cancel_reset').click(toggleResetPswd);
-    $('#logreg-forms #btn-signup').click(toggleSignUp);
-    $('#logreg-forms #cancel_signup').click(toggleSignUp);
-})g" target="_blank" style="color:black">By Group 6</a>
+    <a href="" style="color:black">By Group 6</a>
   </p>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="/assets/script.js"></script>
+  
 </body>
 
 </html>
