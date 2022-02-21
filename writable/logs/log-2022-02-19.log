@@ -1,0 +1,303 @@
+ERROR - 2022-02-19 00:35:14 --> Email: sendWithSmtp throwed fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known. 
+CRITICAL - 2022-02-19 00:35:14 --> Undefined property: App\Controllers\Users::$email
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(238): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 238, Array)
+#1 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(175): App\Controllers\Users->sendEmail()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->register()
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+ERROR - 2022-02-19 00:35:52 --> Email: sendWithSmtp throwed fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known. 
+CRITICAL - 2022-02-19 00:35:52 --> Undefined property: App\Controllers\Users::$email
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(238): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 238, Array)
+#1 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(175): App\Controllers\Users->sendEmail()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->register()
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+ERROR - 2022-02-19 00:36:18 --> Email: sendWithSmtp throwed fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known. 
+CRITICAL - 2022-02-19 00:36:18 --> Undefined property: App\Controllers\Users::$email
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(238): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 238, Array)
+#1 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(175): App\Controllers\Users->sendEmail()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->register()
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+ERROR - 2022-02-19 00:37:03 --> Email: sendWithSmtp throwed fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known. 
+CRITICAL - 2022-02-19 00:37:03 --> Undefined property: App\Controllers\Users::$email
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(238): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 238, Array)
+#1 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(175): App\Controllers\Users->sendEmail()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->register()
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+ERROR - 2022-02-19 00:37:17 --> Email: sendWithSmtp throwed fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known. 
+CRITICAL - 2022-02-19 00:37:17 --> Undefined property: App\Controllers\Users::$email
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(238): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 238, Array)
+#1 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(175): App\Controllers\Users->sendEmail()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->register()
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+ERROR - 2022-02-19 00:44:13 --> Email: sendWithSmtp throwed fsockopen(): unable to connect to tls://smtp.googlemail.com:465 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+)
+CRITICAL - 2022-02-19 00:44:13 --> Undefined property: App\Controllers\Users::$email
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(238): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 238, Array)
+#1 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(175): App\Controllers\Users->sendEmail()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->register()
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+ERROR - 2022-02-19 00:44:43 --> Email: sendWithSmtp throwed fsockopen(): unable to connect to tls://smtp.googlemail.com:465 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+)
+CRITICAL - 2022-02-19 00:44:43 --> Undefined property: App\Controllers\Users::$email
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(238): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 238, Array)
+#1 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(175): App\Controllers\Users->sendEmail()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->register()
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+ERROR - 2022-02-19 00:45:23 --> Email: sendWithSmtp throwed fsockopen(): unable to connect to smtp.googlemail.com:587 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+)
+CRITICAL - 2022-02-19 00:45:23 --> Undefined property: App\Controllers\Users::$email
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(238): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 238, Array)
+#1 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(175): App\Controllers\Users->sendEmail()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->register()
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-02-19 00:55:40 --> Undefined property: App\Controllers\Users::$email
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(238): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 238, Array)
+#1 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(175): App\Controllers\Users->sendEmail()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->register()
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+ERROR - 2022-02-19 00:56:51 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number
+CRITICAL - 2022-02-19 00:56:51 --> Undefined property: App\Controllers\Users::$email
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(238): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 238, Array)
+#1 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(175): App\Controllers\Users->sendEmail()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->register()
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-02-19 00:57:14 --> Undefined property: App\Controllers\Users::$email
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(238): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 238, Array)
+#1 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(175): App\Controllers\Users->sendEmail()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->register()
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-02-19 00:57:59 --> Undefined property: App\Controllers\Users::$email
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(238): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 238, Array)
+#1 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(175): App\Controllers\Users->sendEmail()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->register()
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-02-19 00:58:46 --> Undefined property: App\Controllers\Users::$email
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(238): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 238, Array)
+#1 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(175): App\Controllers\Users->sendEmail()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->register()
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-02-19 01:06:01 --> Undefined property: App\Controllers\Users::$email
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(238): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 238, Array)
+#1 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(175): App\Controllers\Users->sendEmail()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->register()
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-02-19 01:06:20 --> Undefined property: App\Controllers\Users::$email
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(238): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 238, Array)
+#1 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(175): App\Controllers\Users->sendEmail()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->register()
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+ERROR - 2022-02-19 01:11:42 --> Email: sendWithSmtp throwed fsockopen(): unable to connect to smtp.gmail.com:587 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+)
+CRITICAL - 2022-02-19 01:11:42 --> Undefined property: App\Controllers\Users::$email
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(238): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 238, Array)
+#1 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(175): App\Controllers\Users->sendEmail()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->register()
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-02-19 06:57:04 --> Undefined property: App\Controllers\Users::$email
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(238): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 238, Array)
+#1 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(175): App\Controllers\Users->sendEmail(Array)
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->register()
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+ERROR - 2022-02-19 06:57:38 --> Email: sendWithSmtp throwed fsockopen(): unable to connect to ssl://smtp.gmail.com:587 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+)
+CRITICAL - 2022-02-19 06:57:38 --> Undefined property: App\Controllers\Users::$email
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(238): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 238, Array)
+#1 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(175): App\Controllers\Users->sendEmail(Array)
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->register()
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-02-19 07:39:12 --> Undefined property: App\Controllers\Users::$load
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(252): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 252, Array)
+#1 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(176): App\Controllers\Users->send_phpMail()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->register()
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-02-19 08:38:52 --> Undefined property: App\Controllers\Users::$PHPMailer_Lib
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(259): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 259, Array)
+#1 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(183): App\Controllers\Users->send_phpMail()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->register()
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-02-19 08:39:55 --> Undefined property: App\Controllers\Users::$PHPMailer_Lib
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(259): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 259, Array)
+#1 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(183): App\Controllers\Users->send_phpMail()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->register()
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-02-19 08:43:49 --> Class 'PHPMailer_Lib' not found
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(183): App\Controllers\Users->send_phpMail()
+#1 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->register()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-19 08:46:16 --> Class 'PHPMailer\PHPMailer\PHPMailer' not found
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(184): App\Controllers\Users->send_phpMail()
+#1 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->register()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-19 08:54:38 --> Undefined property: App\Controllers\Users::$load
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(260): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 260, Array)
+#1 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(184): App\Controllers\Users->send_phpMail()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->register()
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-02-19 10:06:21 --> Class 'PHPMailer\PHPMailer\PHPMailer' not found
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(185): App\Controllers\Users->send_phpMail()
+#1 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->register()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-19 10:11:13 --> require(C:\xampp\htdocs\City_Taxi\app\third_party/PHPMailer/src/Exception.php): failed to open stream: No such file or directory
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(C:\\xamp...', 'C:\\xampp\\htdocs...', 14, Array)
+#1 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(14): require()
+#2 C:\xampp\htdocs\City_Taxi\system\Autoloader\Autoloader.php(264): include_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\City_Taxi\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\City_Taxi\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#6 [internal function]: spl_autoload_call('App\\Controllers...')
+#7 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#8 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#9 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2022-02-19 10:12:05 --> require(C:\xampp\htdocs\City_Taxi\app\third_party\PHPMailer\src\Exception.php): failed to open stream: No such file or directory
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(C:\\xamp...', 'C:\\xampp\\htdocs...', 14, Array)
+#1 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(14): require()
+#2 C:\xampp\htdocs\City_Taxi\system\Autoloader\Autoloader.php(264): include_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\City_Taxi\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\City_Taxi\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#6 [internal function]: spl_autoload_call('App\\Controllers...')
+#7 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#8 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#9 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2022-02-19 18:39:38 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\City_Taxi\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\xampp\htdocs\City_Taxi\public\index.php(28): require('C:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2022-02-19 18:39:59 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\City_Taxi\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\xampp\htdocs\City_Taxi\public\index.php(28): require('C:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2022-02-19 12:13:30 --> require(C:\xampp\htdocs\City_Taxi\app\ThirdParty\PHPMailer\get_oauth_token): failed to open stream: No such file or directory
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(C:\\xamp...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(19): require()
+#2 C:\xampp\htdocs\City_Taxi\system\Autoloader\Autoloader.php(264): include_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\City_Taxi\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\City_Taxi\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#6 [internal function]: spl_autoload_call('App\\Controllers...')
+#7 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#8 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#9 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2022-02-19 15:26:57 --> Invalid file: Admin/login.php
+#0 C:\xampp\htdocs\City_Taxi\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Admin/login.php')
+#1 C:\xampp\htdocs\City_Taxi\system\Common.php(1089): CodeIgniter\View\View->render('Admin/login', Array, true)
+#2 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(78): view('Admin/login', Array)
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->index()
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}

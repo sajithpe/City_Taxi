@@ -372,3 +372,54 @@ CRITICAL - 2022-02-17 02:09:47 --> SQLite3::exec(): no such table: user_details
 #13 C:\wamp64\www\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #14 C:\wamp64\www\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\C...')
 #15 {main}
+CRITICAL - 2022-02-17 03:58:10 --> Class 'Config\App\Validation\UserRules' not found
+#0 C:\wamp64\www\City_Taxi\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\wamp64\www\City_Taxi\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\wamp64\www\City_Taxi\app\Controllers\Users.php(43): CodeIgniter\Controller->validate(Array, Array)
+#3 C:\wamp64\www\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->index()
+#4 C:\wamp64\www\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 C:\wamp64\www\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\C...')
+#8 {main}
+CRITICAL - 2022-02-17 04:02:55 --> Class 'Config\UserRules' not found
+#0 C:\wamp64\www\City_Taxi\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\wamp64\www\City_Taxi\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\wamp64\www\City_Taxi\app\Controllers\Users.php(43): CodeIgniter\Controller->validate(Array, Array)
+#3 C:\wamp64\www\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->index()
+#4 C:\wamp64\www\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 C:\wamp64\www\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\C...')
+#8 {main}
+CRITICAL - 2022-02-17 11:41:43 --> Object of class CodeIgniter\Validation\Validation could not be converted to string
+#0 C:\wamp64\www\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->index()
+#1 C:\wamp64\www\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 C:\wamp64\www\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\C...')
+#5 {main}
+CRITICAL - 2022-02-17 11:43:02 --> Call to undefined method App\Models\UserModel::model
+#0 C:\wamp64\www\City_Taxi\app\Controllers\Users.php(51): CodeIgniter\Model->__call('model', Array)
+#1 C:\wamp64\www\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->index()
+#2 C:\wamp64\www\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\wamp64\www\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\C...')
+#6 {main}
+CRITICAL - 2022-02-17 11:48:15 --> Call to undefined method App\Models\UserModel::model
+#0 C:\wamp64\www\City_Taxi\app\Controllers\Users.php(51): CodeIgniter\Model->__call('model', Array)
+#1 C:\wamp64\www\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->index()
+#2 C:\wamp64\www\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\wamp64\www\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\C...')
+#6 {main}
+CRITICAL - 2022-02-17 11:49:22 --> Call to undefined method App\Models\UserModel::model
+#0 C:\wamp64\www\City_Taxi\app\Controllers\Users.php(51): CodeIgniter\Model->__call('model', Array)
+#1 C:\wamp64\www\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->index()
+#2 C:\wamp64\www\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\wamp64\www\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\C...')
+#6 {main}

@@ -1,6 +1,4 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <!------ Include the above in your HEAD tag ---------->
 
 <!DOCTYPE html>
@@ -10,13 +8,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/style.css">
   <title>City Taxi Register Form</title>
 </head>
 
 <body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
@@ -38,42 +38,42 @@
     <form class="col col-sm-12" method="post" id="regForm" name="regForm">
         <div class="form-group row">
 
-            <label>First Name</label>
+            <label class="fs-4">First Name</label>
             <input type="text" id="uname1" name="uname1" class="form-control" >
             
         </div>
         <div class="form-group row">
-            <label>Last Name</label>
+            <label class="fs-4">Last Name</label>
             <input type="text" id="uname2" name="uname2" class="form-control" >
             
         </div>
         <div class="form-group">
-            <label>Email</label>
+            <label class="fs-4">Email</label>
             <input type="text" id="uemail" name="uemail" class="form-control"  >
            
         </div>
         <div class="from-group">
-            <label>User Name</label>
+            <label class="fs-4">User Name</label>
             <input type="text" id="uuname" name="uuname" class="form-control" >
            
         </div>
         <div class="form-group">
-            <label>Address</label>
+            <label class="fs-4">Address</label>
             <input type="text" id="uadd" name="uadd" class="form-control"  >
            
         </div>
         <div class="form-group">
-            <label>Contact</label>
+            <label class="fs-4">Contact</label>
             <input type="text" id="ucontact" name="ucontact" class="form-control" >
             
         </div>
         <div class="form-group">
-            <label>Password</label>
+            <label class="fs-4">Password</label>
             <input type="password" id="upass" name="upass" class="form-control" >
           
         </div>
         <div class="form-group">
-            <label>Confirm Password</label>
+            <label class="fs-4">Confirm Password</label>
             <input type="password" id="upass2" name="upass2" class="form-control" >   
         </div>       
         <?php 
@@ -95,9 +95,7 @@
   <p style="text-align:center">
     <a href="" target="_blank" style="color:black">By Group 6</a>
   </p>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+ 
 </body>
 
 </html>

@@ -36,6 +36,8 @@ $routes->get('/', 'Users::index');
 // $routes->match(["GET","POST"], "register", "Users::register");
 $routes->get("/register", 'Users::register');
 $routes->post("/register", 'Users::register');
+$routes->get("/home", 'Home::index');
+$routes->post("/adminView", "Home::adminView");
 
 
 
