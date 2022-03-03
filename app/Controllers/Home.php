@@ -35,4 +35,12 @@ class Home extends BaseController
         $data = [];
         print view('Admin/adminView', $data);
     }
+
+
+    public function mkrequest(){
+
+        $data = [];
+        print view('Passenger/mkrqst', $data);
+
+    }
 }

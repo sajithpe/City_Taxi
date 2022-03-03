@@ -1,0 +1,1 @@
+trip_id,req_id,cust_id,driver_id,dist_km,conf_time,pick_time,drop_time,drop_location,total_cost,driver_pay

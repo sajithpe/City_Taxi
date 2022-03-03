@@ -1,0 +1,148 @@
+CRITICAL - 2022-02-27 14:07:47 --> Array to string conversion
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\UserControl.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 122, Array)
+#1 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\UserControl->save_user()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserControl))
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-27 14:08:41 --> Array to string conversion
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\UserControl.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 122, Array)
+#1 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\UserControl->save_user()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserControl))
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-27 14:10:13 --> Array to string conversion
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\UserControl.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 122, Array)
+#1 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\UserControl->save_user()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserControl))
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-27 14:13:14 --> Array to string conversion
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\UserControl.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 122, Array)
+#1 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\UserControl->save_user()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserControl))
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-27 14:18:48 --> Undefined property: App\Controllers\UserControl::$input
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\UserControl.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 44, Array)
+#1 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\UserControl->save_user()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserControl))
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-27 14:22:59 --> Array to string conversion
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\UserControl.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 122, Array)
+#1 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\UserControl->save_user()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserControl))
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-27 14:23:28 --> Array to string conversion
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\UserControl.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 122, Array)
+#1 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\UserControl->save_user()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserControl))
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-27 14:23:57 --> Array to string conversion
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\UserControl.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 122, Array)
+#1 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\UserControl->save_user()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserControl))
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-27 14:28:05 --> Undefined property: App\Controllers\UserControl::$input
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\UserControl.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\UserControl->save_user()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserControl))
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-27 14:47:50 --> Array to string conversion
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\UserControl.php(111): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 111, Array)
+#1 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\UserControl->save_user()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserControl))
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-27 14:48:25 --> Array to string conversion
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\UserControl.php(111): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 111, Array)
+#1 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\UserControl->save_user()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserControl))
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-27 14:48:43 --> Array to string conversion
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\UserControl.php(111): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 111, Array)
+#1 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\UserControl->save_user()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserControl))
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-27 15:12:33 --> Object of class CodeIgniter\Validation\Validation could not be converted to string
+#0 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\UserControl->save_user()
+#1 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserControl))
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-27 15:12:43 --> Object of class CodeIgniter\Validation\Validation could not be converted to string
+#0 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\UserControl->save_user()
+#1 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserControl))
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-27 15:20:55 --> syntax error, unexpected 'public' (T_PUBLIC), expecting end of file
+#0 C:\xampp\htdocs\City_Taxi\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\City_Taxi\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-02-27 15:21:00 --> syntax error, unexpected 'public' (T_PUBLIC), expecting end of file
+#0 C:\xampp\htdocs\City_Taxi\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\City_Taxi\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-02-27 15:33:43 --> Array to string conversion
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\UserControl.php(111): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 111, Array)
+#1 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\UserControl->save_user()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserControl))
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-27 15:33:51 --> Array to string conversion
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\UserControl.php(111): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 111, Array)
+#1 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\UserControl->save_user()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserControl))
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}

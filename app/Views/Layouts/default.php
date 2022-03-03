@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Topnav with sidebar</title>
+    <title>City Taxi</title>
 
     <!-- Import bootstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -11,12 +11,16 @@
         
     </style>
     <link href="/assets/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
 </head>
 
 <body>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    
+   
     <header>
         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
             <symbol id="bootstrap" viewBox="0 0 118 94" fill="gray">
@@ -75,7 +79,7 @@
             <div class="collapse navbar-collapse container" id="navbarSupportedContent">
                 <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 fs-4">
                     <li>
-                        <a href="#" class="nav-link text-white"  id="makeR">
+                        <a href="#" class="nav-link text-white" onclick="mkrqclick('/mkrequest')" id="makeR">
                             <svg class="bi d-block mx-auto mb-1" width="24" height="24">
                                 <use xlink:href="#checklist" />
                             </svg>
@@ -129,7 +133,7 @@
 
                         if (session()->get('uType') != 'a') { ?>
 
-                            <a href="#" class="nav-link text-white" onclick="btnclick('/adminView')">
+                            <a href="#" class="nav-link text-white" onclick="adminclick('/adminView')">
                                 <svg class="bi d-block mx-auto mb-1" width="24" height="24">
                                     <use xlink:href="#admin" />
                                 </svg>
@@ -166,18 +170,32 @@
             </div>
         </div>
     </nav>
+
+    
     <?= $this->renderSection("content") ?>
 </body>
 
 </html>
-
 <script type="text/javascript">
-    function btnclick(_url){
+    function adminclick(_url){
         $.ajax({
             url : _url,
             type : 'post',
             success: function(data) {
              $('#mainDiv').load( "<?php echo site_url('home/adminView')?>" );
+            },
+            error: function() {
+             $('#mainDiv').text('An error occurred');
+            }
+        });
+    }
+
+    function mkrqclick(_url){
+        $.ajax({
+            url : _url,
+            type : 'post',
+            success: function(data) {
+             $('#mainDiv').load( "<?php echo site_url('home/mkrequest')?>" );
             },
             error: function() {
              $('#mainDiv').text('An error occurred');

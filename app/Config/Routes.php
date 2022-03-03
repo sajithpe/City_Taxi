@@ -38,6 +38,29 @@ $routes->get("/register", 'Users::register');
 $routes->post("/register", 'Users::register');
 $routes->get("/home", 'Home::index');
 $routes->post("/adminView", "Home::adminView");
+$routes->post("/mkrequest", "Home::mkrequest");
+
+$routes->post("/usersList", 'UserControl::index');
+$routes->post("/save-user", 'UserControl::save');
+$routes->post("/getUser", 'UserControl::getuser');
+$routes->post("/update-user", 'UserControl::updateUser');
+$routes->post("/delete-user", 'UserControl::deleteUser');
+$routes->post("/vTypeList", 'VTypeControl::index');
+$routes->post("/delete-type", 'VTypeControl::deleteType');
+$routes->post("/getVtype", 'VTypeControl::getType');
+$routes->post("/save-vtype", 'VTypeControl::saveType');
+$routes->post("/update-vType", 'VTypeControl::updateType');
+
+$routes->post("/driverList", 'DriverControl::index');
+
+$routes->post("/vehicleList", 'VehicleControl::index');
+$routes->post("/delete-v", 'VehicleControl::deleteVehicle');
+$routes->post("/update-v", 'VehicleControl::updateVehicle');
+$routes->post("/get-v", 'VehicleControl::getVehicle');
+$routes->post("/save-v", 'VehicleControl::saveVehicle');
+
+
+
 
 
 

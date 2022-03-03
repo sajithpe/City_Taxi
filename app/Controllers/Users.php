@@ -183,7 +183,7 @@ class Users extends BaseController
                 $user->save($register_data);
                 
                  $session = session();
-                 $this->sendEmail($register_data);
+                
                  $session->setFlashdata("success","Registration successfull. Please check your inbox and verify the email address.");
                  return redirect()->to('/');
                 
