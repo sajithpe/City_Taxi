@@ -1,0 +1,118 @@
+CRITICAL - 2022-03-05 00:01:12 --> Undefined index: validation
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->index()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-05 00:01:36 --> Object of class CodeIgniter\Validation\Validation could not be converted to string
+#0 C:\xampp\htdocs\City_Taxi\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\City_Taxi\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\City_Taxi\system\Common.php(1089): CodeIgniter\View\View->render('Admin/login', Array, true)
+#3 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(88): view('Admin/login', Array)
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->index()
+#5 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-03-05 00:01:52 --> Object of class CodeIgniter\Validation\Validation could not be converted to string
+#0 C:\xampp\htdocs\City_Taxi\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\City_Taxi\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\City_Taxi\system\Common.php(1089): CodeIgniter\View\View->render('Admin/login', Array, true)
+#3 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(88): view('Admin/login', Array)
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->index()
+#5 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-03-05 00:05:35 --> validpw is not a valid rule.
+#0 C:\xampp\htdocs\City_Taxi\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('validpw')
+#1 C:\xampp\htdocs\City_Taxi\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('upass', 'Password', '1', Array, Array)
+#2 C:\xampp\htdocs\City_Taxi\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(61): CodeIgniter\Controller->validate(Array, Array)
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->index()
+#5 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-03-05 02:11:33 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(112): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 112, Array)
+#1 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->verifyotp()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-05 02:11:57 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(112): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 112, Array)
+#1 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->verifyotp()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-05 02:12:04 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(112): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 112, Array)
+#1 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->verifyotp()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-05 02:15:21 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(112): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 112, Array)
+#1 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->verifyotp()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-05 02:17:52 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(112): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 112, Array)
+#1 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->verifyotp()
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-05 02:21:37 --> Call to a member function update() on array
+#0 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->verifyotp()
+#1 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-03-05 02:22:45 --> Invalid file: Admin/home.php
+#0 C:\xampp\htdocs\City_Taxi\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Admin/home.php')
+#1 C:\xampp\htdocs\City_Taxi\system\Common.php(1089): CodeIgniter\View\View->render('Admin/home', Array, true)
+#2 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(78): view('Admin/home')
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->index()
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-03-05 02:23:07 --> Invalid file: Admin/home.php
+#0 C:\xampp\htdocs\City_Taxi\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Admin/home.php')
+#1 C:\xampp\htdocs\City_Taxi\system\Common.php(1089): CodeIgniter\View\View->render('Admin/home', Array, true)
+#2 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(78): view('Admin/home')
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->index()
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-03-05 02:24:06 --> Invalid file: /home.php
+#0 C:\xampp\htdocs\City_Taxi\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/home.php')
+#1 C:\xampp\htdocs\City_Taxi\system\Common.php(1089): CodeIgniter\View\View->render('/home', Array, true)
+#2 C:\xampp\htdocs\City_Taxi\app\Controllers\Users.php(78): view('/home')
+#3 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(825): App\Controllers\Users->index()
+#4 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 C:\xampp\htdocs\City_Taxi\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\City_Taxi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\City_Taxi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}

@@ -80,6 +80,7 @@
           ?>
             <div class="alert alert-success">
               <?php echo $session->getFlashdata('success'); ?>
+
             </div>
           <?php
           }
@@ -96,13 +97,51 @@
   </p>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script>
     $(function() {
 
       $('.alert').delay(3000).fadeOut(300);
 
     });
+
+    function triggerMail(rpw, em) {
+
+      alert(rpw + ' and ' + em);
+    }
+
+    function sendNewMail(rpw, em) {
+
+      var toMail = em;
+      var randomPw = rpw;
+
+      Email.send({
+        SecureToken: '7451ed2e-8d90-4ff1-bfc5-d0789ce5954f',
+        To: toMail,
+        From: 'citytaxi1212@gmail.com',
+        Subject: 'City Taxi Account verification',
+        Body: '<p>please use this onetime password <strong>' + randomPw + '</strong> at the first login to verify your account.</p>'
+      }).then(
+        message => alert(message)
+      );
+    }
   </script>
+
+  <?php
+
+  if (isset($regData)) { ?>
+    <script type="text/javascript">
+      var e = <?php echo json_encode($regData['email']) ?>;
+      var rp = <?php echo $regData['random_pw'] ?>;
+
+      sendNewMail(rp, e);
+    </script>
+
+  <?php }
+
+  ?>
+
+
 </body>
 
 </html>

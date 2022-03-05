@@ -55,10 +55,14 @@
                                         echo '<button type="button" class="btn btn-outline-warning btn-sm" onclick="delete_v(' . $vehicle['v_id'] . ');" >Enable</button>';
                                         break;
                                     case null:
-                                        echo '<button type="button" class="btn btn-outline-warning btn-sm" onclick="delete_v(' . $vehicle['v_id'] . ');" >Disable</button>';
+                                        echo '<button type="button" class="btn btn-outline-danger btn-sm" onclick="delete_v(' . $vehicle['v_id'] . ');" >Disable</button>';
                                         break;
                                 }
                                 ?>
+
+
+                                <button type="button" class="btn-outline-secondary btn-sm" onclick="vehicle_d(<?php echo $vehicle['v_id']; ?>)">Driver</button>
+
 
                             </td>
                         </tr>
@@ -133,218 +137,257 @@
         </div>
     </div>
     </div>
+    <<div class="modal fade" id="formAddD" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modTitle2"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="color: black;" id="dListBody">
 
+                    
+                    </div>
 
+                </div>
+            </div>
+        </div>
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $("#v-list").dataTable();
-        });
-
-
-        $(document).ready(function() {
-
-            $("#addV").click(function() {
-                $('#formAddV').modal('show');
-                $('#modTitle').text("Add New Vehicle");
-                $('#btnVupdate').hide();
-                $('#btnVsave').show();
-
-            });
-        });
-
-        function delete_v(vid) {
-
-            alertify.confirm('Confirm Action', 'Are you sure you want to change the status of Vehicle id ' + vid + ' ?', function() {
-                delete_confirm(vid);
-            }, function() {
-
-            });
-        }
-
-        function delete_confirm(vid) {
-            $.ajax({
-                url: "/delete-v",
-                type: 'POST',
-                data: {
-                    'v_id': vid,
-                },
-                dataType: "json",
-                success: function(data) {
-
-                    getV();
-                    $("#v-list").dataTable();
-
-                    alertify.set('notifier', 'position', 'top-right');
-                    alertify.success(data.status);
-                },
-                error: function(data) {
-
-                    getV();
-                    $("#v-list").dataTable();
-
-                    alertify.set('notifier', 'position', 'top-right');
-                    alertify.error(data.status);
-                }
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#v-list").dataTable();
+                
             });
 
-        }
+           
 
-        function getV() {
-            $.ajax({
-                url: "/vehicleList",
-                type: 'post',
-                success: function(data) {
-                    $('#vhcl_tab').load("<?php echo site_url('vehicleControl/index') ?>");
-                    $('#vehicle-list').DataTable();
+            $(document).ready(function() {
 
-                },
-                error: function(data) {
-                    console.log(data);
-                    $('#mainDiv').text('An error occurred');
-                }
-            });
-        }
-
-        function update_v() {
-
-            var formData = {
-                'vid': $('#vid').val(),
-                'v_number': $('#vNum').val(),
-                'v_model': $('#vModel').val(),
-                'v_brand': $('#vBrand').val(),
-                'v_type': $('#vType').val(),
-            };
-
-            var errorData = [];
-
-            if (formData.v_type.length == 0 || formData.v_number.length == 0 || formData.v_model == 0 || formData.v_brand.length == 0) {
-
-                errorData.push("All fields must be filled")
-
-                alertify.set('notifier', 'position', 'top-right');
-                alertify.error(errorData[0]);
-
-            } else {
-
-                $.ajax({
-                    url: "/update-v",
-                    type: 'POST',
-                    data: formData,
-                    dataType: "json",
-                    success: function(data) {
-
-
-                        $('#formAddV').modal('hide');
-                        getV();
-                        $("#v-list").dataTable();
-                        $("#addV_form")[0].reset()
-
-                        // var response = JSON.parse(data); 
-                        console.log(data.status);
-                        alertify.set('notifier', 'position', 'top-right');
-                        alertify.success(data.status);
-                    },
-                    error: function(data) {
-
-                        $('#formAddV').modal('hide');
-                        $("#v-list").dataTable();
-                        // var response = JSON.parse(data); 
-                        console.log(data.status);
-                        alertify.set('notifier', 'position', 'top-right');
-                        alertify.error(data.status);
-                    }
-                });
-            }
-
-        }
-
-        function edit_v(vid) {
-
-            $.ajax({
-                url: "/get-v",
-                type: 'POST',
-                data: {
-                    'vid': vid,
-                },
-                dataType: "json",
-                success: function(response) {
-
-                    $.each(response, function(key, vdata) {
-
-                        $('#vid').val(vdata['v_id']),
-                            $('#vType').val(vdata['v_type']),
-                            $('#vNum').val(vdata['v_number']),
-                            $('#vModel').val(vdata['v_model']),
-                            $('#vBrand').val(vdata['v_brand'])
-
-                    });
-                    $('#modTitle').text("Update vehicle");
+                $("#addV").click(function() {
                     $('#formAddV').modal('show');
-                    $('#btnVsave').hide();
-                    $('#btnVupdate').show();
+                    $('#modTitle').text("Add New Vehicle");
+                    $('#btnVupdate').hide();
+                    $('#btnVsave').show();
 
-                },
-                error: function(response) {
-
-                    alertify.set('notifier', 'position', 'top-right');
-                    alertify.error(data.status);
-                }
-
+                });
             });
-        }
 
-        function save_v() {
-
-            var formData = {
-                'vid': $('#vid').val(),
-                'v_number': $('#vNum').val(),
-                'v_model': $('#vModel').val(),
-                'v_brand': $('#vBrand').val(),
-                'v_type': $('#vType').val(),
-            };
-
-
-            var errorData = [];
-
-            if (formData.v_type.length == 0 || formData.v_number.length == 0 || formData.v_model == 0 || formData.v_brand.length == 0) {
-
-                errorData.push("All fields must be filled")
-
-                alertify.set('notifier', 'position', 'top-right');
-                alertify.error(errorData[0]);
-
-            } else {
+            function vehicle_d(v) {
 
                 $.ajax({
-                    url: "/save-v",
+                    url: "/all-drivers",
+                    type: 'post',
+                    success: function(data) {
+                        $('#formAddD').modal('show');
+                        console.log(data.drivers);
+                        
+
+                    },
+                    error: function(data) {
+                        console.log(data);
+                        $('#mainDiv').text('An error occurred');
+                    }
+                });
+
+
+            }
+
+            
+            function delete_v(vid) {
+
+                alertify.confirm('Confirm Action', 'Are you sure you want to change the status of Vehicle id ' + vid + ' ?', function() {
+                    delete_confirm(vid);
+                }, function() {
+
+                });
+            }
+
+            function delete_confirm(vid) {
+
+                $.ajax({
+                    url: "/delete-v",
                     type: 'POST',
-                    data: formData,
+                    data: {
+                        'v_id': vid,
+                    },
                     dataType: "json",
                     success: function(data) {
 
-
-                        $('#formAddV').modal('hide');
                         getV();
                         $("#v-list").dataTable();
-                        $("#addV_form")[0].reset()
 
-                        // var response = JSON.parse(data); 
-                        console.log(data.status);
                         alertify.set('notifier', 'position', 'top-right');
                         alertify.success(data.status);
+                        console.log(data.status);
                     },
                     error: function(data) {
-
-                        $('#formAddV').modal('hide');
+                        console.log(data.item);
+                        getV();
                         $("#v-list").dataTable();
-                        // var response = JSON.parse(data); 
-                        console.log(data.status);
+
                         alertify.set('notifier', 'position', 'top-right');
                         alertify.error(data.status);
                     }
                 });
+
             }
 
-        }
-    </script>
+            function getV() {
+                $.ajax({
+                    url: "/vehicleList",
+                    type: 'post',
+                    success: function(data) {
+                        $('#vhcl_tab').load("<?php echo site_url('vehicleControl/index') ?>");
+                        $('#vehicle-list').DataTable();
+
+                    },
+                    error: function(data) {
+                        console.log(data);
+                        $('#mainDiv').text('An error occurred');
+                    }
+                });
+            }
+
+            function update_v() {
+
+                var formData = {
+                    'vid': $('#vid').val(),
+                    'v_number': $('#vNum').val(),
+                    'v_model': $('#vModel').val(),
+                    'v_brand': $('#vBrand').val(),
+                    'v_type': $('#vType').val(),
+                };
+
+                var errorData = [];
+
+                if (formData.v_type.length == 0 || formData.v_number.length == 0 || formData.v_model == 0 || formData.v_brand.length == 0) {
+
+                    errorData.push("All fields must be filled")
+
+                    alertify.set('notifier', 'position', 'top-right');
+                    alertify.error(errorData[0]);
+
+                } else {
+
+                    $.ajax({
+                        url: "/update-v",
+                        type: 'POST',
+                        data: formData,
+                        dataType: "json",
+                        success: function(data) {
+
+
+                            $('#formAddV').modal('hide');
+                            getV();
+                            $("#v-list").dataTable();
+                            $("#addV_form")[0].reset()
+
+                            // var response = JSON.parse(data); 
+                            console.log(data.status);
+                            alertify.set('notifier', 'position', 'top-right');
+                            alertify.success(data.status);
+                        },
+                        error: function(data) {
+
+                            $('#formAddV').modal('hide');
+                            $("#v-list").dataTable();
+                            // var response = JSON.parse(data); 
+                            console.log(data.status);
+                            alertify.set('notifier', 'position', 'top-right');
+                            alertify.error(data.status);
+                        }
+                    });
+                }
+
+            }
+
+            function edit_v(vid) {
+
+                $.ajax({
+                    url: "/get-v",
+                    type: 'POST',
+                    data: {
+                        'vid': vid,
+                    },
+                    dataType: "json",
+                    success: function(response) {
+                        console.log(response.vehicles);
+
+                        //    var myobj = JSON.parse(response);
+                        ve = response.vehicles[0];
+                        $('#vid').val(ve.v_id),
+                            $('#vType').val(ve.vm_id),
+                            $('#vNum').val(ve.v_number),
+                            $('#vModel').val(ve.v_model),
+                            $('#vBrand').val(ve.v_brand)
+
+
+                        $('#modTitle').text("Update vehicle");
+                        $('#formAddV').modal('show');
+                        $('#btnVsave').hide();
+                        $('#btnVupdate').show();
+
+                    },
+                    error: function(response) {
+
+                        alertify.set('notifier', 'position', 'top-right');
+                        alertify.error(data.status);
+                    }
+
+                });
+            }
+
+            function save_v() {
+
+                var formData = {
+                    'vid': $('#vid').val(),
+                    'v_number': $('#vNum').val(),
+                    'v_model': $('#vModel').val(),
+                    'v_brand': $('#vBrand').val(),
+                    'v_type': $('#vType').val(),
+                };
+
+
+                var errorData = [];
+
+                if (formData.v_type.length == 0 || formData.v_number.length == 0 || formData.v_model == 0 || formData.v_brand.length == 0) {
+
+                    errorData.push("All fields must be filled")
+
+                    alertify.set('notifier', 'position', 'top-right');
+                    alertify.error(errorData[0]);
+
+                } else {
+
+                    $.ajax({
+                        url: "/save-v",
+                        type: 'POST',
+                        data: formData,
+                        dataType: "json",
+                        success: function(data) {
+
+
+                            $('#formAddV').modal('hide');
+                            getV();
+                            $("#v-list").dataTable();
+                            $("#addV_form")[0].reset()
+
+                            // var response = JSON.parse(data); 
+                            console.log(data.status);
+                            alertify.set('notifier', 'position', 'top-right');
+                            alertify.success(data.status);
+                        },
+                        error: function(data) {
+
+                            $('#formAddV').modal('hide');
+                            $("#v-list").dataTable();
+                            // var response = JSON.parse(data); 
+                            console.log(data.status);
+                            alertify.set('notifier', 'position', 'top-right');
+                            alertify.error(data.status);
+                        }
+                    });
+                }
+
+            }
+        </script>

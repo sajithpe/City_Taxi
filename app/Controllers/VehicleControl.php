@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\UserModel;
 use App\Models\VehicleModel;
 use App\Models\VTypeModel;
 
@@ -25,12 +26,8 @@ class VehicleControl extends BaseController
             $builder->select('*');
             $builder->join('vehicle_master_data', 'vehicle_master_data.vm_id = vehicles.vm_id');
             $builder->join('user_details', 'user_details.uid = vehicles.uid','left');
-            // $builder->select('vehicles.*','vehicle_master_data.vm_id','vehicle_master_data.v_type');
-            
-            // $builder->select('user_details.uid','user_details.name1','user_details.name2');
             $builder->orderBy('vehicles.v_id');
             $vList = $builder->get()->getResultArray();
-            echo "<script>console.log('" . json_encode($vList)  . "' );</script>";
         
             $tList = $model2->findAll();
         } catch (\Exception $e) {
@@ -51,45 +48,93 @@ class VehicleControl extends BaseController
         print view('Admin/vList.php', $data);
     }
 
-    public function deleteVehicle()
-    {
 
+
+    public function drivers(){
+
+       
         $data = [];
-
+        $session = \Config\Services::session();
+        $data["session"] = $session;
+        $db      = \Config\Database::connect();
+        $builder = $db->table('user_details');
+        
+        
         try {
+           
+            
+            // // $builder->select('*');
+            $query = $builder->getWhere(['userType'=>'d', 'delStatus'=>'n']);
+            $builder->orderBy('user_details.uid');            
+            $data['drivers'] = $query->getResultArray();
 
-            $model = new VehicleModel();
-            $id = $this->request->getPost("vid");
-            $thisItem = $model->find($id);
-
-
-            if ($thisItem['v_delStatus'] == "n") {
-                $stat = array('v_delStatus' => "y");
-                $model->update($id, $stat);
-            } else {
-                $stat = array('v_delStatus' => "n");
-                $model->update($id, $stat);
-            }
-
-
-            $data['status'] = "Updated Successfully...!";
             return $this->response->setJSON($data);
+
         } catch (\Exception $e) {
 
             die($e->getMessage());
             $data["status"]  = $e;
             echo json_encode($data);
         }
+        
+    }
+
+    public function deleteVehicle()
+    {
+        
+        $data = [];
+        
+        try {
+
+            $model = new VehicleModel();
+            $vid = $this->request->getPost("v_id");
+            $thisItem = $model->find($vid);
+            
+
+            if ($thisItem['v_delStatus'] == "n") {
+                $stat = array('v_delStatus' => "y");
+                $model->update($vid, $stat);
+            } else {
+                $stat = array('v_delStatus' => "n");
+                $model->update($vid, $stat);
+            }
+
+            
+            $data['status'] = "Updated Successfully...!";
+            return $this->response->setJSON($data);
+
+        } catch (\Exception $e) {
+
+            die($e->getMessage());
+            $data["status"]  = $e;
+            
+            echo json_encode($data);
+        }
     }
 
     public function getVehicle()
     {
-
+        $data = [];
+        $session = \Config\Services::session();
+        $data["session"] = $session;
+        $db      = \Config\Database::connect();
+        $builder = $db->table('vehicles');
+        
         try {
+           
 
             $model = new VehicleModel();
             $searchId = $this->request->getPost("vid");
-            $data['vehicles'] = $model->find($searchId);
+            // $data['vehicles'] = $model->find($searchId);
+            // $builder->select('*');
+            // $builder->getWhere(['vehicles.v_id'=>$searchId]);
+            $builder->join('vehicle_master_data', 'vehicle_master_data.vm_id = vehicles.vm_id');
+            $builder->join('user_details', 'user_details.uid = vehicles.uid','left');
+            $builder->orderBy('vehicles.v_id');            
+            // $data['vehicles'] = $builder->get()->getResult();
+            $query = $builder->getWhere(['vehicles.v_id'=>$searchId]);
+            $data['vehicles'] = $query->getResultArray();
+
             return $this->response->setJSON($data);
         } catch (\Exception $e) {
 
@@ -137,7 +182,7 @@ class VehicleControl extends BaseController
             "v_number" => $this->request->getPost("v_number"),
             "v_model" => $this->request->getPost("v_model"),
             "v_brand" => $this->request->getPost("v_brand"),
-            "delStatus" => "n"
+            "v_delStatus" => "n"
         ];
 
         try {

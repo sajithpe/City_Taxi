@@ -37,6 +37,8 @@ $routes->get('/', 'Users::index');
 $routes->get("/register", 'Users::register');
 $routes->post("/register", 'Users::register');
 $routes->get("/home", 'Home::index');
+$routes->get("/verify", 'Users::verify');
+$routes->post("/verifyotp", 'Users::verifyotp');
 $routes->post("/adminView", "Home::adminView");
 $routes->post("/mkrequest", "Home::mkrequest");
 
@@ -51,13 +53,15 @@ $routes->post("/getVtype", 'VTypeControl::getType');
 $routes->post("/save-vtype", 'VTypeControl::saveType');
 $routes->post("/update-vType", 'VTypeControl::updateType');
 
-$routes->post("/driverList", 'DriverControl::index');
+// $routes->post("/driverList", 'DriverControl::index');
 
 $routes->post("/vehicleList", 'VehicleControl::index');
 $routes->post("/delete-v", 'VehicleControl::deleteVehicle');
 $routes->post("/update-v", 'VehicleControl::updateVehicle');
 $routes->post("/get-v", 'VehicleControl::getVehicle');
 $routes->post("/save-v", 'VehicleControl::saveVehicle');
+$routes->post("/all-drivers", 'VehicleControl::drivers');
+
 
 
 

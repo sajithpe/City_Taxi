@@ -130,6 +130,7 @@ class UserControl extends BaseController
             "userType" => $this->request->getPost("uType"),
             "delStatus" => "n",
             "verify" => "n",
+            "random_pw" => rand(25756,97456)
 
         ];
 
