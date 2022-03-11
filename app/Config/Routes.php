@@ -64,6 +64,9 @@ $routes->post("/get-v", 'VehicleControl::getVehicle');
 $routes->post("/save-v", 'VehicleControl::saveVehicle');
 $routes->post("/all-drivers", 'VehicleControl::drivers');
 $routes->post("/up-driver" , "VehicleControl::setDriver");
+$routes->post("/save-req" , "RequestController::save_request");
+
+
 
 
 

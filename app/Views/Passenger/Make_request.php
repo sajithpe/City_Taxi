@@ -85,8 +85,8 @@
             <h4>
               Request A Taxi Now
             </h4>
-            <form action="">
-              <select name="vehicles" id="vehicles" required>
+            <form >
+              <select id="v_type" required>
                 <option value="" disabled selected hidden>Select a Vehicle</option>
                 <?php if ($types) : ?>
                   <?php foreach ($types as $t) : ?>
@@ -95,19 +95,23 @@
                 <?php endif; ?>
 
               </select>
-              <select name="drivers" id="drivers" required>
+              <select id="driver" name="drivers" required>
                 <option value="" disabled selected hidden>Select a Driver</option>
                 <option></option>
-                <option></option>
+                <?php if ($drivers) : ?>
+                  <?php foreach ($drivers as $d) : ?>
+                    <option value="<?php echo $d['uid'] ?>"><?php echo $d['name1'] ?></option>
+                  <?php endforeach; ?>
+                <?php endif; ?>
               </select>
               <input type="text" placeholder="Pick Up Location" onclick="getLocation();">
               <input type="text" placeholder="Drop Location">
               <input type="date" placeholder="Pick Up Date">
               <input type="time" placeholder="Pick Up Time">
 
-              <div class="btm_input">
+              <div class="btn_input">
 
-                <button>Book Now</button>
+                <button type="button" onclick="save_request();">Book Now</button>
               </div>
             </form>
           </div>
@@ -124,6 +128,13 @@
 
 
 <script type="text/javascript">
+
+
+  // function save_request(){
+
+  //   alert("save me");
+  // }
+
 
   function getLocation(_url) {
     var geoOps = {
@@ -173,4 +184,45 @@
         break;
     }
   }
+
+
+
+  function save_request() {
+
+var formData = {
+    'p_loc': $('#vid').val(),
+    'd_loc': $('#vNum').val(),
+    'r_time': $('#vModel').val(),
+    'r_date': $('#vBrand').val(),
+    'd_id': $('#vType').val(),
+    'v_type': $('#vtype').val(),
+};
+
+
+var errorData = [];
+
+
+    $.ajax({
+        url: "/save-req",
+        type: 'POST',
+        // data: formData,
+        dataType: "json",
+        success: function(data) {
+
+            console.log(data.status);
+            alertify.set('notifier', 'position', 'top-right');
+            alertify.success(data.status);
+        },
+        error: function(data) {
+ 
+            console.log(data.status);
+            alertify.set('notifier', 'position', 'top-right');
+            alertify.error(data.status);
+        }
+    });
+
+
+}
+
+
 </script>

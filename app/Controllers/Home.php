@@ -49,9 +49,25 @@ class Home extends BaseController
         $model2 = new VTypeModel();        
         $tList = $model2->findAll();
 
+        $builder = $db->table('user_details');
 
         
         $data['types'] = $tList;
+
+
+            $builder->select('*');
+            $query = $builder->getWhere(['userType'=>'d', 'delStatus'=>'n']);
+            $builder->orderBy('user_details.uid');            
+            $data['drivers'] = $query->getResultArray();
+
+        //     return $this->response->setJSON($data);
+
+        // } catch (\Exception $e) {
+
+        //     die($e->getMessage());
+        //     $data["status"]  = $e;
+        //     echo json_encode($data);
+        // }
 
         // $data = [];
         print view('Passenger/Make_request', $data);
