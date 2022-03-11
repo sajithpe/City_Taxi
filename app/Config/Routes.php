@@ -40,7 +40,9 @@ $routes->get("/home", 'Home::index');
 $routes->get("/verify", 'Users::verify');
 $routes->post("/verifyotp", 'Users::verifyotp');
 $routes->post("/adminView", "Home::adminView");
-$routes->post("/mkrequest", "Home::mkrequest");
+$routes->post("/mkrequest", "RequestController::index");
+$routes->get("/drList", "Home::dlist");
+
 
 $routes->post("/usersList", 'UserControl::index');
 $routes->post("/save-user", 'UserControl::save');
@@ -61,7 +63,7 @@ $routes->post("/update-v", 'VehicleControl::updateVehicle');
 $routes->post("/get-v", 'VehicleControl::getVehicle');
 $routes->post("/save-v", 'VehicleControl::saveVehicle');
 $routes->post("/all-drivers", 'VehicleControl::drivers');
-
+$routes->post("/up-driver" , "VehicleControl::setDriver");
 
 
 

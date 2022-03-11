@@ -19,6 +19,7 @@ class VehicleControl extends BaseController
 
         $model = new VehicleModel();
         $model2 = new VTypeModel();
+        $model3 = new UserModel();
 
 
         try {
@@ -28,8 +29,14 @@ class VehicleControl extends BaseController
             $builder->join('user_details', 'user_details.uid = vehicles.uid','left');
             $builder->orderBy('vehicles.v_id');
             $vList = $builder->get()->getResultArray();
+
+            $builder = $db->table('user_details');
+            $query = $builder->getWhere(['userType'=>'d', 'delStatus'=>'n']);
+            $builder->orderBy('user_details.uid');            
+            $dList = $query->getResultArray();
         
             $tList = $model2->findAll();
+            // $dList = $model3->findAll();
         } catch (\Exception $e) {
 
             die($e->getMessage());
@@ -43,12 +50,42 @@ class VehicleControl extends BaseController
 
         $data['vehicles'] = $vList;
         $data['types'] = $tList;
+        $data['users'] = $dList;
+       
 
         // print view('Admin/adminView');
         print view('Admin/vList.php', $data);
     }
 
 
+    public function setDriver(){
+
+        $data = [];
+        
+        try {
+
+            $model = new VehicleModel();
+            $vid = $this->request->getPost("vid");
+            $did = $this->request->getPost("did");
+            $thisItem = $model->find($vid);
+            
+            $stat = array('uid' => $did);
+            $model->update($vid, $stat);
+            
+
+            
+            $data['status'] = "Updated Successfully...!";
+            return $this->response->setJSON($data);
+
+        } catch (\Exception $e) {
+
+            die($e->getMessage());
+            $data["status"]  = $e;
+            
+            echo json_encode($data);
+        }
+
+    }
 
     public function drivers(){
 
@@ -66,7 +103,7 @@ class VehicleControl extends BaseController
             // // $builder->select('*');
             $query = $builder->getWhere(['userType'=>'d', 'delStatus'=>'n']);
             $builder->orderBy('user_details.uid');            
-            $data['drivers'] = $query->getResultArray();
+            $data['users'] = $query->getResultArray();
 
             return $this->response->setJSON($data);
 
@@ -77,6 +114,8 @@ class VehicleControl extends BaseController
             echo json_encode($data);
         }
         
+        
+        // return view('Admin/driverList', $data);
     }
 
     public function deleteVehicle()

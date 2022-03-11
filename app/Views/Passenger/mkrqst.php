@@ -37,7 +37,7 @@
         console.log("latitude is " + possition.coords.latitude + " And, Longitude is " + possition.coords.longitude);
         var long = possition.coords.longitude;
         var lat = possition.coords.latitude;
-        $("#map").text("")
+        // $("#map").text("")
     }
 
     function showError(error) {

@@ -137,15 +137,52 @@
         </div>
     </div>
     </div>
-    <<div class="modal fade" id="formAddD" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+    <div class="modal fade" id="formAddD" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="modTitle2"></h5>
+                    <input type="hidden" id="upvid"></input>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body" style="color: black;" id="dListBody">
 
+
+                <div class="mt-3 table-responsive pt-1 mt-1">
+        <table class="table table-bordered table-striped table-hover styled-table" id="drivers-list">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    
+                    <th>Contact</th>
+                    <th>E-mail</th>
+                   
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php if ($users) : ?>
+                    <?php foreach ($users as $user) : ?>
+                        <tr>
+                            
+                            <td><?php echo $user['name1']; ?> <?php echo $user['name2']; ?></td>
+                            
+                            <td><?php echo $user['contact']; ?></td>
+                            <td><?php echo $user['email']; ?></td>
+
+                            
+                           
+                            <td>
+                                <button type="button" class="btn btn-outline-secondary btn-sm" onclick="select_driver(<?php echo $user['uid']; ?>)">Select Driver</button>
+                               
+
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                <?php endif; ?>
+            </tbody>
+        </table>
+    </div>
                     
                     </div>
 
@@ -154,11 +191,12 @@
         </div>
 
         <script type="text/javascript">
+
+
             $(document).ready(function() {
                 $("#v-list").dataTable();
                 
             });
-
            
 
             $(document).ready(function() {
@@ -172,14 +210,47 @@
                 });
             });
 
+            function select_driver(did){
+
+                var formData = {
+                    'vid': $('#upvid').val(),
+                    'did': did
+                };
+
+                $.ajax({
+                    url: "/up-driver",
+                    data: formData,
+                    type: 'post',
+                    success: function(data) {
+                        $('#formAddD').modal('hide');
+                        $("#drivers-list").dataTable();   
+                        getV();
+                        alertify.set('notifier', 'position', 'top-right');
+                        alertify.success(data.status);
+                                           
+
+                    },
+                    error: function(data) {
+                        console.log(data);
+                        alertify.set('notifier', 'position', 'top-right');
+                        alertify.error(data.status);
+
+                    }
+                });
+
+
+            }
+
             function vehicle_d(v) {
 
                 $.ajax({
                     url: "/all-drivers",
                     type: 'post',
                     success: function(data) {
+                        $('#upvid').val(v);
                         $('#formAddD').modal('show');
-                        console.log(data.drivers);
+                        $("#drivers-list").dataTable();
+                        console.log(data.users);
                         
 
                     },

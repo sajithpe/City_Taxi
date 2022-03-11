@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\VTypeModel;
+
 class Home extends BaseController
 {
     public function index()
@@ -38,9 +40,28 @@ class Home extends BaseController
 
 
     public function mkrequest(){
+        
+        $session = \Config\Services::session();
+        $data["session"] = $session;
+        $db      = \Config\Database::connect();
+        $data = [];
+
+        $model2 = new VTypeModel();        
+        $tList = $model2->findAll();
+
+
+        
+        $data['types'] = $tList;
+
+        // $data = [];
+        print view('Passenger/Make_request', $data);
+
+    }
+
+    public function dlist(){
 
         $data = [];
-        print view('Passenger/mkrqst', $data);
+        return view('Admin/driverList', $data);
 
     }
 }
